@@ -4,13 +4,11 @@ public abstract class Book {
     private String isbn;
     private String title;
     private int year;
-    private double price;
 
-    public Book(String isbn, String title, int year, double price) {
+    public Book(String isbn, String title, int year) {
         this.isbn = isbn;
         this.title = title;
         this.year = year;
-        this.price = price;
     }
 
     public String getIsbn() {
@@ -25,10 +23,6 @@ public abstract class Book {
         return this.year;
     }
 
-    public double getPrice() {
-        return this.price;
-    }
-
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
@@ -41,9 +35,4 @@ public abstract class Book {
         this.year = year;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public abstract boolean isPurchasable();
 }

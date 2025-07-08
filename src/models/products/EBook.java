@@ -1,6 +1,6 @@
 package models.products;
 
-public class EBook extends Book {
+public class EBook extends Purchasable {
     private String filetype;
 
     public EBook(String isbn, String title, int year, double price, String filetype) {
@@ -14,11 +14,6 @@ public class EBook extends Book {
 
     public String getFiletype(String filetype) {
         return this.filetype;
-    }
-
-    @Override
-    public boolean isPurchasable() {
-        return true;
     }
 
 }
