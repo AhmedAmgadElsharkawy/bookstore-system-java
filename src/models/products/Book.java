@@ -1,14 +1,18 @@
 package models.products;
 
+import services.deliveryServices.DeliveryService;
+
 public abstract class Book {
     private String isbn;
     private String title;
     private int year;
+    private DeliveryService deliveryService;
 
-    public Book(String isbn, String title, int year) {
+    public Book(String isbn, String title, int year, DeliveryService deliveryService) {
         this.isbn = isbn;
         this.title = title;
         this.year = year;
+        this.deliveryService = deliveryService;
     }
 
     public String getIsbn() {
@@ -35,4 +39,15 @@ public abstract class Book {
         this.year = year;
     }
 
+    public DeliveryService getDelliveryService() {
+        return deliveryService;
+    }
+
+    public void getDelliveryService(DeliveryService deliveryService) {
+        this.deliveryService = deliveryService;
+    }
+
+    public void deliver() {
+        deliveryService.deliver(this.title);
+    }
 }
