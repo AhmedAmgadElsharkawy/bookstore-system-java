@@ -1,4 +1,4 @@
-# 📘 Bookstore (Java)
+# Bookstore System (Java)
 
 Java-based implementation of a simplified **Bookstore system**, designed with clean Object-Oriented Programming principles and extensible architecture.
 
