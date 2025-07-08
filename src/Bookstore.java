@@ -47,6 +47,14 @@ public class Bookstore {
             System.out.println("Error: " + e.getMessage());
         }
 
+        // Try purchasing the paper book with quantity > stock
+        try {
+            double amountPaid = store.buy("124-A", 4, customer);
+            System.out.println("Paid amount: $" + amountPaid);
+        } catch (RuntimeException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
         // Try purchasing the ebook
         try {
             double amountPaid = store.buy("456-B", 1, customer);

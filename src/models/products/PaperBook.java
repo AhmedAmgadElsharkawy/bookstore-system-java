@@ -21,7 +21,7 @@ public class PaperBook extends Purchasable {
     @Override
     public double buy(int quantity) {
         if (this.stock < quantity)
-            throw new RuntimeException("Quantum book store: Not enough stock available");
+            throw new RuntimeException("Not enough stock available");
         this.stock -= quantity;
         return quantity * this.getPrice();
     }
