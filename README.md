@@ -64,7 +64,7 @@ Clone the repository to your local machine:
 ### 2. run the application
 
 ```
-  java src/Bookstore.java.java
+  java src/Bookstore.java
 ```
 
 ## License
