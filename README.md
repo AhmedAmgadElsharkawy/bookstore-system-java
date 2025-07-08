@@ -58,7 +58,7 @@ It supports multiple book types, inventory management, and purchase flow handlin
 Clone the repository to your local machine:
 
 ```bash
-  git clone https://github.com/AhmedAmgadElsharkawy/ecommerce-system-java.git
+  git clone https://github.com/AhmedAmgadElsharkawy/bookstore-system-java.git
 ```
 
 ### 2. run the application
