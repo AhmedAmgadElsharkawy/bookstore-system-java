@@ -51,8 +51,6 @@ It supports multiple book types, inventory management, and purchase flow handlin
 - Dependencies: **None** (no external libraries)
 - Design Style: **Pure Object-Oriented Programming**
 
----
-
 ## How to Use
 
 ### 1. Clone the Repository
